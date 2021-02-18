@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Estudiante de "Administración de Sistemas Informáticos en Red".
 
-### More Information
+### Más información
 
-A place to include any other types of information that you'd like to include about yourself.
+Está web, contiene la creación de blogs con Jekyll y GitHub Pages.
 
-### Contact me
+### Contacto
 
-[email@domain.com](mailto:email@domain.com)
+[Jacobo Azmani](mailto:azmanijacobo@gmail.com)
