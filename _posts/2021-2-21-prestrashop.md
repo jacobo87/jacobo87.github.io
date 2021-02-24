@@ -11,7 +11,7 @@
 2.2. Docker restart policies
 2.3. Variables de entorno
 2.4. Orden en el que se inician los servicios
-2.Referencias
+6.Referencias
 
 
 ## 1 Práctica: Instalación de PrestaShop usando contenedores Docker y Docker Compose
@@ -39,10 +39,67 @@ A continuación se describen muy brevemente algunas de las tareas que tendrá qu
 
 ```bash
 version: '3.4'
-
 services:
+    phpmyadmin:
+        image: phpmyadmin
+        environment:
+            - PMA_ARBITRARY=1
+        ports:
+            - 8080:80
+        networks:
+            - frontend-network
+            - backend-network
+        depends_on: 
+            - mysql
+        restart: always
+    mysql:
+        image: mysql:5.7
+        ports:
+            - 3306:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        volumes:
+            - mysql_data:/var/lib/mysql
+        networks:
+            - backend-network
+        restart: always
+    prestashop:
+        image: prestashop/prestashop
+        ports:
+            - 80:80
+        environment:
+            - DB_SERVER=${DB_SERVER}
+        volumes:
+            - prestashop_data:/var/www/html
+        networks:
+            - frontend-network
+            - backend-network
+        restart: always
+        depends_on: 
+            - mysql
+networks:
+    frontend-network:
+    backend-network:
+
+volumes:
+    mysql_data:
+    prestashop_data:
+```
+
+> IMPORTANTE 
+- **Eliminar la carpeta de install al terminar la instalación** de PrestaShop.
+![PrestaShop](images/ps.png "PrestaShop")
+
+- Para poder elminar la carpeta install dentro del contenedor, seguimos los siguientes pasos:
+![PrestaShop](images/install.png "PrestaShop")
+
+ - Añadimos HAproxy para el balanceo de la carga.
+
+```bash
   lb:
-  # Con image, indicamos que descargue una prediseñada
     image: dockercloud/haproxy
     ports:
       - 80:80
@@ -53,58 +110,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     networks: 
       - frontend-network
-
-  mysql: 
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
-    ports: 
-      - 3306:3306
-    environment: 
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=${MYSQL_DATABASE}
-      - MYSQL_USER=${MYSQL_USER}
-      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-    volumes: 
-      - mysql_data:/var/lib/mysql
-      - ./sql:/docker-entrypoint-initdb.d
-    networks:
-      - backend-network
-    restart: always
-
-  apache:
-  # Con build, le indicamos que haga una imagen desde el Dockerfile
-    build: ./apache
-    #ports: 
-    #  - 80:80
-    depends_on:
-      - mysql
-    networks:
-      - frontend-network
-      - backend-network
-    restart: always
-
-  phpmyadmin:
-    image: phpmyadmin
-    ports: 
-      - 8080:80
-    environment: 
-      - PMA_ARBITRARY=1
-    networks:
-      - backend-network
-      - frontend-network
-    restart: always
-    depends_on:
-      - mysql
-
-networks:
-    frontend-network:
-    backend-network:
-
-volumes:
-    mysql_data:
-
 ```
-
 - Con el siguiente comando, ```docker-compose up --scale apache=2```, lanzamos el tantos servicios "**apache**" como queramos, en este caso "**=2**".
 
 7. Buscar cuál es la dirección IP pública de su instancia en AWS y comprobar que puede acceder a los servicios de **PrestaShop** y **phpMyAdmin** desde una navegador web.
