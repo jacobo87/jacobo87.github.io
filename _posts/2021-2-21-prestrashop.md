@@ -91,10 +91,10 @@ volumes:
 
 > IMPORTANTE 
 - **Eliminar la carpeta de install al terminar la instalación** de PrestaShop.
-![PrestaShop](images/ps.png "PrestaShop")
+![PrestaShop](../images/ps.png "PrestaShop")
 
 - Para poder elminar la carpeta install dentro del contenedor, seguimos los siguientes pasos:
-![PrestaShop](images/install.png "PrestaShop")
+![PrestaShop](../images/install.png "PrestaShop")
 
  - Añadimos HAproxy para el balanceo de la carga.
 
@@ -135,7 +135,7 @@ Sólo los servicios que están en la red frontend-network expondrán sus puertos
 
 A continuación se muestra un diagrama con las redes y los servicios que tiene que crear:
 
-![image1](images/índice.png "Indice")
+![image1](../images/índice.png "Indice")
 
 
 #### 1.2.2 Docker restart policies
