@@ -1,4 +1,4 @@
-![Sosmatic](../images/unnamed.png)
+![Sosmatic](../images/wall.jpg)
 > 2021 
 
 ## Herramientas para Windows
