@@ -1,5 +1,5 @@
 # Herramientas
-![Sosmatic](/images/unnamed.png)
+![Sosmatic](../images/unnamed.png)
 > 2021 
 
 ## Herramientas para Windows
