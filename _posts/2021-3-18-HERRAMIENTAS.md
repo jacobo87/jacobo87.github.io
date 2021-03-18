@@ -21,21 +21,21 @@ Reparación **Windows Update**:
 - [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe)
 
 ### Liberador de espacio en disco
-> Ejecutar en terminal 
 
 ````cleanmgr````
 
-### Restablecer TCP/IP:
-> Ejecutar en terminal 
-````c
+### Restablecer TCP/IP
+
+````
 netsh winsock reset
 ````
-````c
+
+````
 netsh int ip reset
 ````
 
-Limpiar cache DNS:
-````c
+### Limpiar cache DNS
+````
 ipconfig /flushdns
 ````
 
