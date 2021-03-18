@@ -1,4 +1,3 @@
-# Herramientas
 ![Sosmatic](../images/unnamed.png)
 > 2021 
 
