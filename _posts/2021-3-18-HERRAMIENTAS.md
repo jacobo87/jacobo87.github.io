@@ -31,13 +31,13 @@ netsh winsock reset
 ```
 netsh int ip reset
 ```
-#### Limpiar cache DNS
+**Limpiar cache DNS**
 ```
 ipconfig /flushdns
 ```
 ## Herramientas para Mac
 **Links** de interés:
--[Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
+- [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
 ## Puesta a punto Windows/MAC
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
