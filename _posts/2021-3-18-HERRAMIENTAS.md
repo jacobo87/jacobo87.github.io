@@ -34,8 +34,8 @@ netsh int ip reset
 ipconfig /flushdns
 ``
 ## Herramientas para Mac
-**Links**:
--
+**Links** de interés:
+-[Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
 ## Puesta a punto Windows/MAC
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
