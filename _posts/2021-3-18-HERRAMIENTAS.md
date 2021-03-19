@@ -21,18 +21,18 @@ Reparación **Windows Update**:
 - [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe)
 
 ### Liberador de espacio en disco
-```
+```bash
 cleanmgr
 ```
 ### Restablecer TCP/IP
-```
+```bash
 netsh winsock reset
 ```
-```
+```bash
 netsh int ip reset
 ```
 **Limpiar cache DNS**
-```
+```bash
 ipconfig /flushdns
 ```
 ## Herramientas para Mac
