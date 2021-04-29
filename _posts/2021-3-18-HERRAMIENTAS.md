@@ -35,6 +35,17 @@ netsh int ip reset
 ```bash
 ipconfig /flushdns
 ```
+### Updates Windows
+```c
+DISM.exe /Online /Cleanup-image /Restorehealth
+```
+---
+```c
+DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows /LimitAccess
+```
+---
+DISM crea un archivo de registro (%windir%/Logs/CBS/CBS.log) que captura cualquier problema que la herramienta encontró o corrigió. %windir% es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta %windir% es C:\Windows.
+
 ## Herramientas para Mac
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
