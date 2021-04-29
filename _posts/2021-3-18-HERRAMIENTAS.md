@@ -46,6 +46,14 @@ DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows /
 ---
 DISM crea un archivo de registro (%windir%/Logs/CBS/CBS.log) que captura cualquier problema que la herramienta encontró o corrigió. %windir% es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta %windir% es C:\Windows.
 
+### Habilitar Windows Defender
+En ```regedit```:
+```
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows 
+```
+Borrar el valor DisableAntiSpyware. 
+- Aplica a WinXp, Win Vista, Win7, Win8.x a Win10.
+
 ## Herramientas para Mac
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
