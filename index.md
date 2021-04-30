@@ -213,7 +213,7 @@ Instalación y actualización de programas:
 - [Microsoft docs](https://docs.microsoft.com/es-es/)
 - [Cleanmgr](https://docs.microsoft.com/es-es/windows-server/administration/windows-commands/cleanmgr)
 
-[Inicio](./)
+[Subir](./)
 
 >  &copy;Jacobo IT 
 

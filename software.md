@@ -137,5 +137,5 @@
 (Plex organiza video, música y fotos de librerías de medios personales y hace stream de estos a smart TV) - MULTIPLATAFORMA: LINUX, MAC y WINDOWS
 * [REAPER](https://www.reaper.fm/)
 
-[Inicio](./software.md)
+[Subir](./software.md)
 
