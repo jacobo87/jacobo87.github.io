@@ -34,7 +34,7 @@ netsh winsock reset
 ```bash
 netsh int ip reset
 ```
-**Limpiar cache DNS**
+### Limpiar cache DNS**
 ```bash
 ipconfig /flushdns
 ```
@@ -48,6 +48,10 @@ DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows /
 ```
 ---
 DISM crea un archivo de registro (%windir%/Logs/CBS/CBS.log) que captura cualquier problema que la herramienta encontró o corrigió. %windir% es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta %windir% es C:\Windows.
+---
+```c
+sfc /scannow
+```
 
 ### Habilitar Windows Defender
 En ```regedit```:
@@ -65,6 +69,6 @@ Borrar el valor DisableAntiSpyware.
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
 
-_yay_
+> &copy; Jacobo IT
 
 [back](./)
