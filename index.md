@@ -70,4 +70,4 @@ Instalación y actualización de programas:
 
 > &copy; [Jacobo IT](http://jacoboazmani.org/)
 
-[back](./)
+[Inicio](./)
