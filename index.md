@@ -98,9 +98,13 @@ O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/set
 
 ### Habilitar Windows Defender
 En ```regedit```:
+
+![regedit](./assets/images/regedit.png "regedit")
 ```
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows 
 ```
+![regedit](./assets/images/regedit1.png "regedit")
+
 Borrar el valor DisableAntiSpyware. 
 
 - Aplica a WinXp, Win Vista, Win7, Win8.x y Win10.
