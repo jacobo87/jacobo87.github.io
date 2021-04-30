@@ -19,7 +19,8 @@ HHD / SSD:
 
 Hardware:
 - [HWmonitor](https://download.cpuid.com/hwmonitor/hwmonitor_1.43.zip)
---- 
+---  
+
 ### Liberador de espacio en disco
 ```bash
 cleanmgr
@@ -44,7 +45,7 @@ DISM.exe /Online /Cleanup-image /Restorehealth
 DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows /LimitAccess
 ```
 ---
-DISM crea un archivo de registro (%windir%/Logs/CBS/CBS.log) que captura cualquier problema que la herramienta encontró o corrigió. %windir% es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta %windir% es C:\Windows.
+**DISM** crea un archivo de registro (**%windir%/Logs/CBS/CBS.log**) que captura cualquier problema que la herramienta encontró o corrigió. %windir% es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta **%windir%** es ```C:\Windows```.
 ---
 ```c
 sfc /scannow
@@ -52,7 +53,7 @@ sfc /scannow
 El comando **sfc /scannow** examinará todos los archivos de sistema protegidos y remplaza los archivos dañados con una copia en caché ubicada en una carpeta comprimida en **%WinDir%\System32\dllcache**.
 El marcador de posición **%WinDir%** representa la carpeta del sistema operativo Windows. Por ejemplo, ```C:\Windows```. (Fuente: [Microsoft](https://support.microsoft.com/es-es/topic/use-la-herramienta-comprobador-de-archivos-de-sistema-para-reparar-los-archivos-de-sistema-que-faltan-o-est%C3%A1n-da%C3%B1ados-79aa86cb-ca52-166a-92a3-966e85d4094e))
 
-O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
+- O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
 
 ### Habilitar Windows Defender
 En ```regedit```:
