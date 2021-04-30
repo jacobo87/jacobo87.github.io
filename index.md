@@ -31,7 +31,7 @@ netsh winsock reset
 ```bash
 netsh int ip reset
 ```
-### Limpiar cache DNS**
+### Limpiar cache DNS
 ```bash
 ipconfig /flushdns
 ```
@@ -68,6 +68,6 @@ Borrar el valor DisableAntiSpyware.
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
 
-> &copy; Jacobo IT
+> &copy; [Jacobo IT](http://jacoboazmani.org/)
 
 [back](./)
