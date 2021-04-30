@@ -1,123 +1,70 @@
 ---
 layout: default
 ---
+# VARIOS
+> 2021 
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+## Herramientas para Windows
+**Links**: 
+- [Malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou/)
+- [Superantispyware](https://www.superantispyware.com/downloadfile.html?productid=SUPERANTISPYWAREFRE*E)
+- [Eset Scan](http://download.eset.com/special/eos/ESETOnlineScanner_ESL.exe)
+- [Windows Slimmer](https://www.auslogics.com/es/software/windows-slimmer/)
 
-[Link to another page](./another-page.html).
+Desinstalador:
+- [Geek Uninstaller](https://www.geekuninstaller.com/geek.zip)
 
-There should be whitespace between paragraphs.
+HHD / SSD:
+- [CrystalDisk info](https://crystalmark.info/en/software/crystaldiskinfo/)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Hardware:
+- [HWmonitor](https://download.cpuid.com/hwmonitor/hwmonitor_1.43.zip)
 
-# Header 1
+Reparación **Windows Update**:
+- [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+### Liberador de espacio en disco
+```bash
+cleanmgr
 ```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+### Restablecer TCP/IP
+```bash
+netsh winsock reset
 ```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
+```bash
+netsh int ip reset
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+**Limpiar cache DNS**
+```bash
+ipconfig /flushdns
 ```
+### Updates Windows
+```c
+DISM.exe /Online /Cleanup-image /Restorehealth
+```
+---
+```c
+DISM.exe /Online /Cleanup-Image /RestoreHealth /Source:C:\RepairSource\Windows /LimitAccess
+```
+---
+DISM crea un archivo de registro (%windir%/Logs/CBS/CBS.log) que captura cualquier problema que la herramienta encontró o corrigió. %windir% es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta %windir% es C:\Windows.
 
+### Habilitar Windows Defender
+En ```regedit```:
 ```
-The final element.
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows 
 ```
+Borrar el valor DisableAntiSpyware. 
+- Aplica a WinXp, Win Vista, Win7, Win8.x a Win10.
+
+## Herramientas para Mac
+**Links** de interés:
+- [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
+
+## Puesta a punto Windows/MAC
+Instalación y actualización de programas:
+- [Ninite](https://ninite.com/)
+
+_yay_
+
+[back](./)
