@@ -170,7 +170,15 @@ Stop-Process -ID 2137 -Force
 ---
 
 ### Iniciar/detener servicios en Windows
-Acedemos a **ejecutar** y escribimos ``services.msc``.
+Acedemos a 
+```
+ejecutar
+```
+y escribimos 
+```
+services.msc
+```
+
 Aquí podemos buscar cualquier servicio de Windows que queramos iniciar o detener.
 
 ![services.msc](./assets/images/service.png "services.msc")
