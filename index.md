@@ -91,7 +91,6 @@ Instalación y actualización de programas:
 ## REFERENCIAS
 - [Microsoft docs](https://docs.microsoft.com/es-es/)
 - [Cleanmgr](https://docs.microsoft.com/es-es/windows-server/administration/windows-commands/cleanmgr)
-- []()
 
 >  [&copy; Jacobo IT](http://jacoboazmani.org/)
 
