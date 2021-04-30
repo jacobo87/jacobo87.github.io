@@ -24,9 +24,6 @@ HHD / SSD:
 Hardware:
 - [HWmonitor](https://download.cpuid.com/hwmonitor/hwmonitor_1.43.zip)
 
-### MÁS SOFTWARE
-[MÁS SOFTWARE](./2021-3-30-SOFTWARE.md).
-
 ---  
 
 ### Liberador de espacio en disco
