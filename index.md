@@ -22,6 +22,7 @@ Hardware:
 ---  
 
 ### Liberador de espacio en disco
+Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones de línea de comandos para especificar que cleanmgr Limpie los archivos temporales, los archivos de Internet, los archivos descargados y los archivos de la papelera de reciclaje.
 ```c
 cleanmgr
 ```
@@ -78,7 +79,7 @@ En ```regedit```:
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows 
 ```
 Borrar el valor DisableAntiSpyware. 
-- Aplica a WinXp, Win Vista, Win7, Win8.x a Win10.
+- Aplica a WinXp, Win Vista, Win7, Win8.x y Win10.
 
 ## Herramientas para Mac
 **Links** de interés:
@@ -87,6 +88,11 @@ Borrar el valor DisableAntiSpyware.
 ## Puesta a punto Windows/MAC
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
+
+## REFERENCIAS
+- [Microsoft docs](https://docs.microsoft.com/es-es/)
+- [Cleanmgr](https://docs.microsoft.com/es-es/windows-server/administration/windows-commands/cleanmgr)
+- []()
 
 >  [&copy; Jacobo IT](http://jacoboazmani.org/)
 
