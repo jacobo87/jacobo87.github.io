@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# VARIOS
+# COMANDOS Y HERRAMIENTAS
 > 2021 
 
 ## Herramientas para Windows
