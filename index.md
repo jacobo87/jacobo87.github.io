@@ -13,6 +13,7 @@ layout: default
 
 Desinstalador:
 - [Geek Uninstaller](https://www.geekuninstaller.com/geek.zip)
+- [IObit Unlocker](https://iobit-unlocker.uptodown.com/windows)
 
 HHD / SSD:
 - [CrystalDisk info](https://crystalmark.info/en/software/crystaldiskinfo/)
@@ -91,6 +92,58 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows
 ```
 Borrar el valor DisableAntiSpyware. 
 - Aplica a WinXp, Win Vista, Win7, Win8.x y Win10.
+
+### Matar un proceso usando ```Taskkill```
+Matar un proceso usando Taskkill
+> Nota: Algunos procesos se ejecutan como Administrador (elevado). Para matarlos, debe abrir una instancia de símbolo del sistema elevada. 
+
+Abra el símbolo del sistema como el usuario actual o como Administrador.
+Escriba tasklist para ver la lista de procesos en ejecución y sus PID. Como la lista puede ser muy larga, puede utilizar un carácter de tubería con el comando more.
+```
+tasklist | more
+```
+Lista de tareas de Windows 10
+Para matar un proceso por su PID, escriba el comando
+```
+taskkill /F /PID pid_number
+```
+Para matar un proceso por su nombre, escriba el comando
+```
+taskkill /IM "nombre del proceso" /F
+```
+Por ejemplo, para matar un proceso por su PID
+```
+taskkill /F /PID 1242
+```
+Windows 10 ```Taskkill``` por ```Pid```
+Para matar un proceso por su nombre:
+```
+taskkill /IM "notepad.exe" /F
+```
+> Nota: Para matar un proceso que se ejecuta de forma elevada, es necesario abrir PowerShell como Administrador. 
+
+Abrir **PowerShell**. Si es necesario, ejecútelo como **Administrador**.
+Escriba el comando ```Get-Process``` para ver la lista de procesos en ejecución.
+Para matar un proceso por su nombre, ejecute el siguiente ```cmdlet```:
+```
+Stop-Process -Name "ProcessName" -Force
+```
+Para matar un proceso por su PID, ejecute el comando
+```
+Stop-Process -ID PID -Force
+```
+- Ejemplos:
+Este comando cerrará el proceso notepad.exe.
+```
+Stop-Process -Nombre "Notepad" -Force
+```
+
+Windows 10 Powershell Matar un Proceso
+El siguiente comando cerrará un proceso con PID 2137.
+```
+Stop-Process -ID 2137 -Force
+```
+([Fuente: Winaero](https://winaero.com/kill-process-windows-10/))
 
 ## Herramientas para Mac
 **Links** de interés:
