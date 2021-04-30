@@ -171,9 +171,9 @@ Para matar un proceso en sistema **MacOS**, en el buscador, escribimos ```termin
 Cuando se nos abra, escribimos ```top```, que es el "**administrador de tareas**" de **MacOS** o sistemas **UNIX** y buscamos el proceso, en este caso, por ejemplo, **logmien**. 
 Este proceso al igual que en Windows tiene una **ID**, normalmente un número.
 Una vez localizado pulsamos ``q`` para salir del proceso ``top`` y acto seguido terminamos el proceso: 
-``
-$ kill
-``
+```bash
+$ kill "+ID"
+```
 
 ## Puesta a punto Windows/MAC
 Instalación y actualización de programas:
