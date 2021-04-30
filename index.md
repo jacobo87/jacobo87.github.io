@@ -39,20 +39,19 @@ ipconfig /flushdns
 ```
 ### Limpiar ```WinsockFix```
 Para hacerlo de **forma manual** vamos a hacer lo siguiente:
-En Windows XP:
 
-    Hacemos click en ```INICIO/EJECUTAR``` y escribimos ```cmd```.
-    En la consola escribimos ```netsh winsock reset catalog``` y presionamos **ENTER**
-    Luego escribimos ```netsh int ip reset resetlog.txt``` y **ENTER** nuevamente.
-    Reiniciamos nuestro sistema y debería estar funcionando.
+- En Windows XP:
+Hacemos click en ```INICIO/EJECUTAR``` y escribimos ```cmd```.
+En la consola escribimos ```netsh winsock reset catalog``` y presionamos **ENTER**
+Luego escribimos ```netsh int ip reset resetlog.txt``` y **ENTER** nuevamente.
+Reiniciamos nuestro sistema y debería estar funcionando.
 
-Para Windows 7:
-
-    Hacemos click en ```INICIO``` y en el cuadro de búsqueda escribimos ```cmd```.
-    Hacemos click derecho sobre ```cmd.exe``` y seleccionamos **Ejecutar como Administrador**
-    Escribimos ```netsh winsock reset catalog``` y presionamos **ENTER**.
-    Luego escribimos ```netsh int ip reset resetlog.txt``` y **ENTER** nuevamente.
-    Reiniciamos nuestro sistema.
+- Para Windows 7:
+Hacemos click en ```INICIO``` y en el cuadro de búsqueda escribimos ```cmd```.
+Hacemos click derecho sobre ```cmd.exe``` y seleccionamos **Ejecutar como Administrador**
+Escribimos ```netsh winsock reset catalog``` y presionamos **ENTER**.
+Luego escribimos ```netsh int ip reset resetlog.txt``` y **ENTER** nuevamente.
+Reiniciamos nuestro sistema.
 
 ### Updates Windows
 ```c
