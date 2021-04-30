@@ -174,6 +174,11 @@ Una vez localizado pulsamos ``q`` para salir del proceso ``top`` y acto seguido 
 ```bash
 $ kill "+ID"
 ```
+Ejemplo de ``top``:
+![Top](./assets/images/top.png "Top")
+
+Ejemplo de ``kill``:
+![Kill](./assets/images/kill.png "Kill")
 
 ## Puesta a punto Windows/MAC
 Instalación y actualización de programas:
