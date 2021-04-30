@@ -28,6 +28,8 @@ Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones d
 ```c
 cleanmgr
 ```
+---
+
 ### Restablecer TCP/IP
 ```c
 netsh winsock reset
@@ -35,10 +37,14 @@ netsh winsock reset
 ```c
 netsh int ip reset
 ```
+---
+
 ### Limpiar cache DNS
 ```c
 ipconfig /flushdns
 ```
+---
+
 ### Limpiar ```WinsockFix```
 Para hacerlo de **forma manual** vamos a hacer lo siguiente:
 
@@ -68,6 +74,7 @@ y presionamos **ENTER**. Luego escribimos:
 netsh int ip reset resetlog.txt
 ``` 
 y **ENTER** nuevamente, reiniciamos nuestro sistema.
+---
 
 ### Updates Windows
 ```c
@@ -87,6 +94,7 @@ El comando ```sfc /scannow``` examinará todos los archivos de sistema protegido
 El marcador de posición ```%WinDir%``` representa la carpeta del sistema operativo Windows. Por ejemplo, ```C:\Windows```. (Fuente: [Microsoft](https://support.microsoft.com/es-es/topic/use-la-herramienta-comprobador-de-archivos-de-sistema-para-reparar-los-archivos-de-sistema-que-faltan-o-est%C3%A1n-da%C3%B1ados-79aa86cb-ca52-166a-92a3-966e85d4094e))
 
 - O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
+---
 
 ### Habilitar Windows Defender
 En ```regedit```:
@@ -95,6 +103,7 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows
 ```
 Borrar el valor DisableAntiSpyware. 
 - Aplica a WinXp, Win Vista, Win7, Win8.x y Win10.
+---
 
 ### Matar un proceso usando ```Taskkill```
 Matar un proceso usando Taskkill
@@ -148,6 +157,7 @@ El siguiente comando cerrará un proceso con PID 2137.
 Stop-Process -ID 2137 -Force
 ```
 ([Fuente: Winaero](https://winaero.com/kill-process-windows-10/))
+---
 
 ## Herramientas para Mac
 **Links** de interés:
