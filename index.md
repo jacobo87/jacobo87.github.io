@@ -95,6 +95,7 @@ El marcador de posición ```%WinDir%``` representa la carpeta del sistema operat
 sfc /scannow
 ```
 ![sfc /scannow](./assets/images/sfc.png "sfc /scannow")
+
 O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
 
 ---
