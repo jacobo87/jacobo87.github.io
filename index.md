@@ -154,6 +154,7 @@ El siguiente comando cerrará un proceso con PID 2137.
 Stop-Process -ID 2137 -Force
 ```
 ([Fuente: Winaero](https://winaero.com/kill-process-windows-10/))
+
 ---
 
 ## Herramientas para Mac
