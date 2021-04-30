@@ -68,6 +68,6 @@ Borrar el valor DisableAntiSpyware.
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
 
-> &copy; [Jacobo IT](http://jacoboazmani.org/)
+>  [&copy; Jacobo IT](http://jacoboazmani.org/)
 
 [Inicio](./)
