@@ -44,6 +44,7 @@ Para hacerlo de **forma manual** vamos a hacer lo siguiente:
 
 - En Windows XP:
 Hacemos click en ```INICIO/EJECUTAR``` y escribimos ```cmd```.
+
 En la consola escribimos 
 ```
 netsh winsock reset catalog
@@ -57,6 +58,7 @@ y **ENTER** nuevamente, reiniciamos nuestro sistema y debería estar funcionando
 - Para Windows 7:
 Hacemos click en ```INICIO``` y en el cuadro de búsqueda escribimos ```cmd```.
 Hacemos click derecho sobre ```cmd.exe``` y seleccionamos **Ejecutar como Administrador**
+
 Escribimos: 
 ```
 netsh winsock reset catalog
@@ -133,7 +135,8 @@ Para matar un proceso por su PID, ejecute el comando
 ```
 Stop-Process -ID PID -Force
 ```
-- Ejemplos:
+
+Ejemplos:
 Este comando cerrará el proceso notepad.exe.
 ```
 Stop-Process -Nombre "Notepad" -Force
