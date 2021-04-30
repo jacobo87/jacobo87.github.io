@@ -14,6 +14,7 @@ layout: default
 Desinstalador:
 - [Geek Uninstaller](https://www.geekuninstaller.com/geek.zip)
 - [IObit Unlocker](https://iobit-unlocker.uptodown.com/windows)
+> IObit Unlocker es una aplicación que nos permitirá eliminar aquellos archivos que por cualquier motivo se encuentran bloqueados en nuestro ordenador y que al intentar borrarlos recibimos un mensaje de error que nos comunica que es imposible. 
 
 HHD / SSD:
 - [CrystalDisk info](https://crystalmark.info/en/software/crystaldiskinfo/)
