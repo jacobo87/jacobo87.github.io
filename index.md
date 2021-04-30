@@ -153,7 +153,7 @@ Este comando cerrará el proceso notepad.exe.
 Stop-Process -Nombre "Notepad" -Force
 ```
 
-Windows 10 Powershell Matar un Proceso
+Windows 10 Powershell Matar un Proceso 
 El siguiente comando cerrará un proceso con PID 2137.
 ```
 Stop-Process -ID 2137 -Force
