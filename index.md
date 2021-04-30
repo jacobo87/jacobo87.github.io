@@ -31,6 +31,7 @@ cleanmgr
 ---
 
 ### Restablecer TCP/IP
+Ejecutamos en la ```consola```:
 ```c
 netsh winsock reset
 ```
@@ -40,6 +41,7 @@ netsh int ip reset
 ---
 
 ### Limpiar cache DNS
+Ejecutamos en la ```consola```:
 ```c
 ipconfig /flushdns
 ```
@@ -91,6 +93,7 @@ El marcador de posición ```%WinDir%``` representa la carpeta del sistema operat
 sfc /scannow
 ```
 O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
+
 ---
 
 ### Habilitar Windows Defender
