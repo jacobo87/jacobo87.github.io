@@ -19,6 +19,7 @@ Desinstalador:
 HHD / SSD:
 - [CrystalDisk info](https://crystalmark.info/en/software/crystaldiskinfo/)
 
+![CrystalDiskinfo](./assets/images/info.png "CrystalDiskinfo")
 Hardware:
 - [HWmonitor](https://download.cpuid.com/hwmonitor/hwmonitor_1.43.zip)
 ---  
@@ -92,6 +93,7 @@ El marcador de posición ```%WinDir%``` representa la carpeta del sistema operat
 ```c
 sfc /scannow
 ```
+![sfc /scannow](./assets/images/sfc.png "sfc /scannow")
 O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
 
 ---
@@ -162,7 +164,7 @@ El siguiente comando cerrará un proceso con PID 2137.
 ```
 Stop-Process -ID 2137 -Force
 ```
-([Fuente: Winaero](https://winaero.com/kill-process-windows-10/))
+(Fuente: [Winaero](https://winaero.com/kill-process-windows-10/))
 
 ---
 
