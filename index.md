@@ -99,7 +99,9 @@ En ```regedit```:
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows 
 ```
 Borrar el valor DisableAntiSpyware. 
+
 - Aplica a WinXp, Win Vista, Win7, Win8.x y Win10.
+
 ---
 
 ### Matar un proceso usando ```Taskkill```
