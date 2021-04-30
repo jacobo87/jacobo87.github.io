@@ -19,10 +19,7 @@ HHD / SSD:
 
 Hardware:
 - [HWmonitor](https://download.cpuid.com/hwmonitor/hwmonitor_1.43.zip)
-
-Reparación **Windows Update**:
-- [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe)
-
+--- 
 ### Liberador de espacio en disco
 ```bash
 cleanmgr
@@ -52,6 +49,8 @@ DISM crea un archivo de registro (%windir%/Logs/CBS/CBS.log) que captura cualqui
 ```c
 sfc /scannow
 ```
+
+O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe).
 
 ### Habilitar Windows Defender
 En ```regedit```:
