@@ -11,10 +11,9 @@ layout: default
 - [Eset Scan](http://download.eset.com/special/eos/ESETOnlineScanner_ESL.exe)
 - [Windows Slimmer](https://www.auslogics.com/es/software/windows-slimmer/)
 - [O&O ShutUp10](https://www.oo-software.com/en/shutup10) 
+> Es totalmente gratuito y no tiene que ser instalado - simplemente se puede ejecutar directamente y de inmediato en su PC. Gracias a **O&O ShutUp10**, usted tiene el control total sobre las funciones de confort de Windows 10 que desea utilizar y decide cuándo la transmisión de sus datos va demasiado lejos. A través de una interfaz muy sencilla, usted decide cómo Windows 10 debe respetar su privacidad, decidiendo qué funciones no deseadas deben ser desactivadas. 
 
 ![O&O](./assets/images/o&o.png "O&O")
-
-> Es totalmente gratuito y no tiene que ser instalado - simplemente se puede ejecutar directamente y de inmediato en su PC. Gracias a **O&O ShutUp10**, usted tiene el control total sobre las funciones de confort de Windows 10 que desea utilizar y decide cuándo la transmisión de sus datos va demasiado lejos. A través de una interfaz muy sencilla, usted decide cómo Windows 10 debe respetar su privacidad, decidiendo qué funciones no deseadas deben ser desactivadas. 
 
 Desinstalador:
 - [Geek Uninstaller](https://www.geekuninstaller.com/geek.zip)
