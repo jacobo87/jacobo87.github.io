@@ -27,6 +27,7 @@ HHD / SSD:
 
 Hardware:
 - [HWmonitor](https://download.cpuid.com/hwmonitor/hwmonitor_1.43.zip)
+> Un programa de monitoreo de hardware que lee los sistemas de PC principales sensores de salud:. voltajes, temperaturas, ventiladores de velocidad. 
 
 ---  
 
