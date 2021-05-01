@@ -17,6 +17,8 @@ layout: default
 
 Desinstalador:
 - [Geek Uninstaller](https://www.geekuninstaller.com/geek.zip)
+> Es una aplicación portable (no necesita instalación) y gratuita que lleva a cabo una eliminación completa de cualquier programa instalado en Windows, incluidos todos los archivos ligados a la misma y las referencias en el Registro de Windows. 
+
 - [IObit Unlocker](https://iobit-unlocker.uptodown.com/windows)
 > IObit Unlocker es una aplicación que nos permitirá eliminar aquellos archivos que por cualquier motivo se encuentran bloqueados en nuestro ordenador y que al intentar borrarlos recibimos un mensaje de error que nos comunica que es imposible. 
 
