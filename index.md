@@ -5,7 +5,7 @@ layout: default
 > 2021 
 
 ## Índice
-- [Herramientas para Windows](#Herramientas-para-Windows)
+- [Herramientas para Windows](#1)
 - [Liberador de espacio en disco](#Liberador-de-espacio-en-disco)
 - [Restablecer TCP/IP](#Restablecer-TCP/IP)
 - [Limpiar cache DNS](#Limpiar-cache-DNS)
@@ -19,7 +19,7 @@ layout: default
 
 --- 
 
-# Herramientas para Windows
+# <a name="1">fHerramientas para Windows</a>
 **Links**: 
 - [Malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou/)
 - [Superantispyware](https://www.superantispyware.com/downloadfile.html?productid=SUPERANTISPYWAREFRE*E)
