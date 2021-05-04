@@ -6,20 +6,20 @@ layout: default
 
 ## Índice
 - [Herramientas para Windows](#1)
-- [Liberador de espacio en disco](#Liberador-de-espacio-en-disco)
-- [Restablecer TCP/IP](#Restablecer-TCP/IP)
-- [Limpiar cache DNS](#Limpiar-cache-DNS)
-- [Limpiar ```WinsockFix```](#Limpiar)
-- [Updates Windows](#Updates-Windows)
-- [Habilitar Windows Defender](#Habilitar-Windows-Defender)
-- [Matar un proceso usando ```Taskkill```](#Matar-un-proceso-usando)
-- [Iniciar/detener servicios en Windows](#Iniciar/detener-servicios-en-Windows)
-- [Solucionar el error de ```memory management``` Windows 10](#Solucionar-el-error-de)
-- [MacOS](#MacOS)
+- [Liberador de espacio en disco](#2)
+- [Restablecer TCP/IP](#3)
+- [Limpiar cache DNS](#4)
+- [Limpiar ```WinsockFix```](#5)
+- [Updates Windows](#6)
+- [Habilitar Windows Defender](#7)
+- [Matar un proceso usando ```Taskkill```](#8)
+- [Iniciar/detener servicios en Windows](#9)
+- [Solucionar el error de ```memory management``` Windows 10](#10)
+- [MacOS](#11)
 
 --- 
 
-# <a name="1">fHerramientas para Windows</a>
+# <a name="1">Herramientas para Windows</a>
 **Links**: 
 - [Malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou/)
 - [Superantispyware](https://www.superantispyware.com/downloadfile.html?productid=SUPERANTISPYWAREFRE*E)
@@ -48,14 +48,14 @@ Hardware:
 
 ---  
 
-## Liberador de espacio en disco
+## <a name="2">Liberador de espacio en disco</a>
 Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones de línea de comandos para especificar que cleanmgr Limpie los archivos temporales, los archivos de Internet, los archivos descargados y los archivos de la papelera de reciclaje.
 ```c
 cleanmgr
 ```
 ---
 
-## Restablecer TCP/IP
+## <a name="3">Restablecer TCP/IP</a>
 Ejecutamos en la ```consola```:
 ```c
 netsh winsock reset
@@ -65,14 +65,14 @@ netsh int ip reset
 ```
 ---
 
-## Limpiar cache DNS
+## <a name="4">Limpiar cache DNS</a>
 Ejecutamos en la ```consola```:
 ```c
 ipconfig /flushdns
 ```
 ---
 
-## Limpiar ```WinsockFix```
+## <a name="5">Limpiar ```WinsockFix```</a>
 Para hacerlo de **forma manual** vamos a hacer lo siguiente:
 
 - En Windows XP:
@@ -104,7 +104,7 @@ y **ENTER** nuevamente, reiniciamos nuestro sistema.
 
 --- 
 
-## Updates Windows
+## <a name="6">Updates Windows</a>
 **DISM** crea un archivo de registro (```%windir%/Logs/CBS/CBS.log```) que captura cualquier problema que la herramienta encontró o corrigió. ```%windir%``` es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta ```%windir%``` es ```C:\Windows```.
 ```c
 DISM.exe /Online /Cleanup-image /Restorehealth
@@ -124,7 +124,7 @@ O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/set
 
 --- 
 
-## Habilitar Windows Defender
+## <a name="7">Habilitar Windows Defender</a>
 En ```regedit```:
 
 ![regedit](./assets/images/regedit.png "regedit")
@@ -139,7 +139,7 @@ Borrar el valor DisableAntiSpyware.
 
 ---
 
-## Matar un proceso usando ```Taskkill```
+## <a name="8">Matar un proceso usando ```Taskkill```</a>
 Matar un proceso usando Taskkill
 > Nota: Algunos procesos se ejecutan como Administrador (elevado). Para matarlos, debe abrir una instancia de símbolo del sistema elevada. 
 
@@ -194,7 +194,7 @@ Stop-Process -ID 2137 -Force
 
 ---
 
-## Iniciar/detener servicios en Windows
+## <a name="9">Iniciar/detener servicios en Windows</a>
 Acedemos a 
 ```
 ejecutar
@@ -208,7 +208,7 @@ Aquí podemos buscar cualquier servicio de Windows que queramos iniciar o detene
 
 ![services.msc](./assets/images/service.png "services.msc") 
 
-## Solucionar el error de ```memory management``` Windows 10
+## <a name="10">Solucionar el error de ```memory management``` Windows 10</a>
 Debemos de reconocer que Windows 10 no se caracteriza demasiado por los pantallazos azules. Por ejemplo, en Windows XP sí que era más común obtener estos bonitos fondos azules. Sin embargo, debemos de prestar especial atención en cómo se producen estos. Sobre todo, si ocurren de forma frecuente podrían deberse a un mal funcionamiento continuado del sistema o de algún componente físicos de nuestro sistema.
 
 - Primer procedimiento: testeo del estado de la memoria RAM
@@ -218,7 +218,7 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 - Si esto no funciona ejecutamos un ``sfc /scannow``.
 (Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
-# Herramientas para Mac
+# <a name="11">Herramientas para Mac</a>
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
 
