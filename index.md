@@ -9,17 +9,17 @@ layout: default
 - [Liberador de espacio en disco](#Liberador-de-espacio-en-disco)
 - [Restablecer TCP/IP](#Restablecer-TCP/IP)
 - [Limpiar cache DNS](#Limpiar-cache-DNS)
-- [Limpiar ```WinsockFix```](#Limpiar-```WinsockFix```)
+- [Limpiar ```WinsockFix```](#Limpiar)
 - [Updates Windows](#Updates-Windows)
 - [Habilitar Windows Defender](#Habilitar-Windows-Defender)
-- [Matar un proceso usando ```Taskkill```](#Matar-un-proceso-usando-```Taskkill```)
+- [Matar un proceso usando ```Taskkill```](#Matar-un-proceso-usando)
 - [Iniciar/detener servicios en Windows](#Iniciar/detener-servicios-en-Windows)
-- [Solucionar el error de ```memory management``` Windows 10](#Solucionar-el-error-de-```memory management```-Windows-10)
+- [Solucionar el error de ```memory management``` Windows 10](#Solucionar-el-error-de)
 - [MacOS](#MacOS)
 
 --- 
 
-## Herramientas para Windows
+# Herramientas para Windows
 **Links**: 
 - [Malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou/)
 - [Superantispyware](https://www.superantispyware.com/downloadfile.html?productid=SUPERANTISPYWAREFRE*E)
@@ -48,14 +48,14 @@ Hardware:
 
 ---  
 
-### Liberador de espacio en disco
+## Liberador de espacio en disco
 Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones de línea de comandos para especificar que cleanmgr Limpie los archivos temporales, los archivos de Internet, los archivos descargados y los archivos de la papelera de reciclaje.
 ```c
 cleanmgr
 ```
 ---
 
-### Restablecer TCP/IP
+## Restablecer TCP/IP
 Ejecutamos en la ```consola```:
 ```c
 netsh winsock reset
@@ -65,14 +65,14 @@ netsh int ip reset
 ```
 ---
 
-### Limpiar cache DNS
+## Limpiar cache DNS
 Ejecutamos en la ```consola```:
 ```c
 ipconfig /flushdns
 ```
 ---
 
-### Limpiar ```WinsockFix```
+## Limpiar ```WinsockFix```
 Para hacerlo de **forma manual** vamos a hacer lo siguiente:
 
 - En Windows XP:
@@ -104,7 +104,7 @@ y **ENTER** nuevamente, reiniciamos nuestro sistema.
 
 --- 
 
-### Updates Windows
+## Updates Windows
 **DISM** crea un archivo de registro (```%windir%/Logs/CBS/CBS.log```) que captura cualquier problema que la herramienta encontró o corrigió. ```%windir%``` es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta ```%windir%``` es ```C:\Windows```.
 ```c
 DISM.exe /Online /Cleanup-image /Restorehealth
@@ -124,7 +124,7 @@ O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/set
 
 --- 
 
-### Habilitar Windows Defender
+## Habilitar Windows Defender
 En ```regedit```:
 
 ![regedit](./assets/images/regedit.png "regedit")
@@ -139,7 +139,7 @@ Borrar el valor DisableAntiSpyware.
 
 ---
 
-### Matar un proceso usando ```Taskkill```
+## Matar un proceso usando ```Taskkill```
 Matar un proceso usando Taskkill
 > Nota: Algunos procesos se ejecutan como Administrador (elevado). Para matarlos, debe abrir una instancia de símbolo del sistema elevada. 
 
@@ -194,7 +194,7 @@ Stop-Process -ID 2137 -Force
 
 ---
 
-### Iniciar/detener servicios en Windows
+## Iniciar/detener servicios en Windows
 Acedemos a 
 ```
 ejecutar
@@ -208,7 +208,7 @@ Aquí podemos buscar cualquier servicio de Windows que queramos iniciar o detene
 
 ![services.msc](./assets/images/service.png "services.msc") 
 
-### Solucionar el error de ```memory management``` Windows 10
+## Solucionar el error de ```memory management``` Windows 10
 Debemos de reconocer que Windows 10 no se caracteriza demasiado por los pantallazos azules. Por ejemplo, en Windows XP sí que era más común obtener estos bonitos fondos azules. Sin embargo, debemos de prestar especial atención en cómo se producen estos. Sobre todo, si ocurren de forma frecuente podrían deberse a un mal funcionamiento continuado del sistema o de algún componente físicos de nuestro sistema.
 
 - Primer procedimiento: testeo del estado de la memoria RAM
@@ -218,11 +218,11 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 - Si esto no funciona ejecutamos un ``sfc /scannow``.
 (Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
-## Herramientas para Mac
+# Herramientas para Mac
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
 
-### Matar un proceso usando ```top```
+## Matar un proceso usando ```top```
 Para matar un proceso en sistema **MacOS**, en el buscador, escribimos ```terminal```.
 Cuando se nos abra, escribimos ```top```, que es el "**administrador de tareas**" de **MacOS** o sistemas **UNIX** y buscamos el proceso, en este caso, por ejemplo, **logmien**. 
 Este proceso al igual que en Windows tiene una **ID**, normalmente un número.
