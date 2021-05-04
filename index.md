@@ -192,6 +192,15 @@ Aquí podemos buscar cualquier servicio de Windows que queramos iniciar o detene
 
 ![services.msc](./assets/images/service.png "services.msc")
 
+### Solucionar el error de ```memory management``` Windows 10
+Debemos de reconocer que Windows 10 no se caracteriza demasiado por los pantallazos azules. Por ejemplo, en Windows XP sí que era más común obtener estos bonitos fondos azules. Sin embargo, debemos de prestar especial atención en cómo se producen estos. Sobre todo, si ocurren de forma frecuente podrían deberse a un mal funcionamiento continuado del sistema o de algún componente físicos de nuestro sistema.
+
+- Primer procedimiento: testeo del estado de la memoria RAM
+En ``ejecutar`` escribimos ``MDSCHED``.
+![checkram](./assets/images/RAM.png "checkram")
+
+- Si esto no funciona ejecutamos un ``sfc /scannow``.
+
 ## Herramientas para Mac
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
