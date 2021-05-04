@@ -5,17 +5,17 @@ layout: default
 > 2021 
 
 ## Índice
-- [Herramientas para Windows](#Herramientas)
-- [Liberador de espacio en disco](#Liberador)
-- [Restablecer TCP/IP](#Restablecer)
-- [Limpiar cache DNS](#DNS)
-- [Limpiar ```WinsockFix```](#WinsockFix)
-- [Updates Windows](#Updates)
-- [Habilitar Windows Defender](#Defender)
-- [Matar un proceso usando ```Taskkill```](#Taskkill)
-- [Iniciar/detener servicios en Windows](#Iniciar/detener)
-- [Solucionar el error de ```memory management``` Windows 10](#management)
-- [MacOS](#Mac)
+- [Herramientas para Windows](#Herramientas-para-Windows)
+- [Liberador de espacio en disco](#Liberador-de-espacio-en-disco)
+- [Restablecer TCP/IP](#Restablecer-TCP/IP)
+- [Limpiar cache DNS](#Limpiar-cache-DNS)
+- [Limpiar ```WinsockFix```](#Limpiar-```WinsockFix```)
+- [Updates Windows](#Updates-Windows)
+- [Habilitar Windows Defender](#Habilitar-Windows-Defender)
+- [Matar un proceso usando ```Taskkill```](#Matar-un-proceso-usando-```Taskkill```)
+- [Iniciar/detener servicios en Windows](#Iniciar/detener-servicios-en-Windows)
+- [Solucionar el error de ```memory management``` Windows 10](#Solucionar-el-error-de-```memory management```-Windows-10)
+- [MacOS](#MacOS)
 
 --- 
 
@@ -54,7 +54,7 @@ Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones d
 cleanmgr
 ```
 ---
-<a name=”item3″></a>
+
 ### Restablecer TCP/IP
 Ejecutamos en la ```consola```:
 ```c
@@ -64,7 +64,7 @@ netsh winsock reset
 netsh int ip reset
 ```
 ---
-<a name=”item4″></a>
+
 ### Limpiar cache DNS
 Ejecutamos en la ```consola```:
 ```c
