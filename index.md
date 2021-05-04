@@ -200,6 +200,7 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 ![checkram](./assets/images/RAM.png "checkram")
 
 - Si esto no funciona ejecutamos un ``sfc /scannow``.
+(Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
 ## Herramientas para Mac
 **Links** de interés:
