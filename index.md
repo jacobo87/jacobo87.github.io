@@ -5,20 +5,20 @@ layout: default
 > 2021 
 
 ## Índice
-- [Herramientas para Windows](#item1)
-- [Liberador de espacio en disco](#item2)
-- [Restablecer TCP/IP](#item3)
-- [Limpiar cache DNS](#item4)
-- [Limpiar ```WinsockFix```](#item5)
-- [Updates Windows](#item6)
-- [Habilitar Windows Defender](#item7)
-- [Matar un proceso usando ```Taskkill```](#item8)
-- [Iniciar/detener servicios en Windows](#item9)
-- [Solucionar el error de ```memory management``` Windows 10](#item10)
-- [MacOS](#item11)
+- [Herramientas para Windows](#Herramientas)
+- [Liberador de espacio en disco](#Liberador)
+- [Restablecer TCP/IP](#Restablecer)
+- [Limpiar cache DNS](#DNS)
+- [Limpiar ```WinsockFix```](#WinsockFix)
+- [Updates Windows](#Updates)
+- [Habilitar Windows Defender](#Defender)
+- [Matar un proceso usando ```Taskkill```](#Taskkill)
+- [Iniciar/detener servicios en Windows](#Iniciar/detener)
+- [Solucionar el error de ```memory management``` Windows 10](#management)
+- [MacOS](#Mac)
 
 --- 
-<a name=”item1″></a>
+
 ## Herramientas para Windows
 **Links**: 
 - [Malwarebytes](https://www.malwarebytes.com/mwb-download/thankyou/)
@@ -47,7 +47,7 @@ Hardware:
 > Un programa de monitoreo de hardware que lee los sistemas de PC principales sensores de salud:. voltajes, temperaturas, ventiladores de velocidad. 
 
 ---  
-<a name=”item2″></a>
+
 ### Liberador de espacio en disco
 Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones de línea de comandos para especificar que cleanmgr Limpie los archivos temporales, los archivos de Internet, los archivos descargados y los archivos de la papelera de reciclaje.
 ```c
@@ -71,7 +71,7 @@ Ejecutamos en la ```consola```:
 ipconfig /flushdns
 ```
 ---
-<a name=”item5″></a>
+
 ### Limpiar ```WinsockFix```
 Para hacerlo de **forma manual** vamos a hacer lo siguiente:
 
@@ -101,9 +101,9 @@ y presionamos **ENTER**. Luego escribimos:
 netsh int ip reset resetlog.txt
 ``` 
 y **ENTER** nuevamente, reiniciamos nuestro sistema.
+
 --- 
 
-<a name=”item6″></a>
 ### Updates Windows
 **DISM** crea un archivo de registro (```%windir%/Logs/CBS/CBS.log```) que captura cualquier problema que la herramienta encontró o corrigió. ```%windir%``` es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta ```%windir%``` es ```C:\Windows```.
 ```c
@@ -124,7 +124,6 @@ O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/set
 
 --- 
 
-<a name=”item7″></a>
 ### Habilitar Windows Defender
 En ```regedit```:
 
@@ -140,7 +139,6 @@ Borrar el valor DisableAntiSpyware.
 
 ---
 
-<a name=”item8″></a>
 ### Matar un proceso usando ```Taskkill```
 Matar un proceso usando Taskkill
 > Nota: Algunos procesos se ejecutan como Administrador (elevado). Para matarlos, debe abrir una instancia de símbolo del sistema elevada. 
@@ -196,7 +194,6 @@ Stop-Process -ID 2137 -Force
 
 ---
 
-<a name=”item9″></a>
 ### Iniciar/detener servicios en Windows
 Acedemos a 
 ```
@@ -211,7 +208,6 @@ Aquí podemos buscar cualquier servicio de Windows que queramos iniciar o detene
 
 ![services.msc](./assets/images/service.png "services.msc") 
 
-<a name=”item10″></a>
 ### Solucionar el error de ```memory management``` Windows 10
 Debemos de reconocer que Windows 10 no se caracteriza demasiado por los pantallazos azules. Por ejemplo, en Windows XP sí que era más común obtener estos bonitos fondos azules. Sin embargo, debemos de prestar especial atención en cómo se producen estos. Sobre todo, si ocurren de forma frecuente podrían deberse a un mal funcionamiento continuado del sistema o de algún componente físicos de nuestro sistema.
 
@@ -222,7 +218,6 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 - Si esto no funciona ejecutamos un ``sfc /scannow``.
 (Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
-<a name=”item11″></a>
 ## Herramientas para Mac
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
