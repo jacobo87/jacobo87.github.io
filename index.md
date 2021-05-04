@@ -48,14 +48,14 @@ Hardware:
 
 ---  
 
-## <a name="2">Liberador de espacio en disco</a>
+### <a name="2">Liberador de espacio en disco</a>
 Borra archivos innecesarios del disco duro del equipo. Puede usar las opciones de línea de comandos para especificar que cleanmgr Limpie los archivos temporales, los archivos de Internet, los archivos descargados y los archivos de la papelera de reciclaje.
 ```c
 cleanmgr
 ```
 ---
 
-## <a name="3">Restablecer TCP/IP</a>
+### <a name="3">Restablecer TCP/IP</a>
 Ejecutamos en la ```consola```:
 ```c
 netsh winsock reset
@@ -65,14 +65,14 @@ netsh int ip reset
 ```
 ---
 
-## <a name="4">Limpiar cache DNS</a>
+#### <a name="4">Limpiar cache DNS</a>
 Ejecutamos en la ```consola```:
 ```c
 ipconfig /flushdns
 ```
 ---
 
-## <a name="5">Limpiar ```WinsockFix```</a>
+#### <a name="5">Limpiar ```WinsockFix```</a>
 Para hacerlo de **forma manual** vamos a hacer lo siguiente:
 
 - En Windows XP:
@@ -104,7 +104,7 @@ y **ENTER** nuevamente, reiniciamos nuestro sistema.
 
 --- 
 
-## <a name="6">Updates Windows</a>
+### <a name="6">Updates Windows</a>
 **DISM** crea un archivo de registro (```%windir%/Logs/CBS/CBS.log```) que captura cualquier problema que la herramienta encontró o corrigió. ```%windir%``` es la carpeta en la que está instalado Windows. Por ejemplo, la carpeta ```%windir%``` es ```C:\Windows```.
 ```c
 DISM.exe /Online /Cleanup-image /Restorehealth
@@ -124,7 +124,7 @@ O bien podemos usar la herramienta [Tweaking](https://www.tweaking.com/files/set
 
 --- 
 
-## <a name="7">Habilitar Windows Defender</a>
+### <a name="7">Habilitar Windows Defender</a>
 En ```regedit```:
 
 ![regedit](./assets/images/regedit.png "regedit")
@@ -139,7 +139,7 @@ Borrar el valor DisableAntiSpyware.
 
 ---
 
-## <a name="8">Matar un proceso usando ```Taskkill```</a>
+### <a name="8">Matar un proceso usando ```Taskkill```</a>
 Matar un proceso usando Taskkill
 > Nota: Algunos procesos se ejecutan como Administrador (elevado). Para matarlos, debe abrir una instancia de símbolo del sistema elevada. 
 
@@ -194,7 +194,7 @@ Stop-Process -ID 2137 -Force
 
 ---
 
-## <a name="9">Iniciar/detener servicios en Windows</a>
+### <a name="9">Iniciar/detener servicios en Windows</a>
 Acedemos a 
 ```
 ejecutar
@@ -208,7 +208,7 @@ Aquí podemos buscar cualquier servicio de Windows que queramos iniciar o detene
 
 ![services.msc](./assets/images/service.png "services.msc") 
 
-## <a name="10">Solucionar el error de ```memory management``` Windows 10</a>
+### <a name="10">Solucionar el error de ```memory management``` Windows 10</a>
 Debemos de reconocer que Windows 10 no se caracteriza demasiado por los pantallazos azules. Por ejemplo, en Windows XP sí que era más común obtener estos bonitos fondos azules. Sin embargo, debemos de prestar especial atención en cómo se producen estos. Sobre todo, si ocurren de forma frecuente podrían deberse a un mal funcionamiento continuado del sistema o de algún componente físicos de nuestro sistema.
 
 - Primer procedimiento: testeo del estado de la memoria RAM
@@ -222,7 +222,7 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
 
-## Matar un proceso usando ```top```
+### Matar un proceso usando ```top```
 Para matar un proceso en sistema **MacOS**, en el buscador, escribimos ```terminal```.
 Cuando se nos abra, escribimos ```top```, que es el "**administrador de tareas**" de **MacOS** o sistemas **UNIX** y buscamos el proceso, en este caso, por ejemplo, **logmien**. 
 Este proceso al igual que en Windows tiene una **ID**, normalmente un número.
@@ -238,7 +238,7 @@ Ejemplo de ``kill``:
 
 ![Kill](./assets/images/kill.png "Kill")
 
-## Puesta a punto Windows/MAC
+### Puesta a punto Windows/MAC
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
 
