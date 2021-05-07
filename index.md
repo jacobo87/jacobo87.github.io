@@ -221,15 +221,18 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 
 ### <a name="11">Eliminar cola de impresión</a>
 En ``cmd`` escribimos los siguientes comandos:
+
+Este comando para los servicios de cola de impresión
 ```c
 net stop spooler
 ```
-Este comando para los servicios de cola de impresión
-En ``C:\WINDOWS\system32\spool\PRINTERS`` eliminamos los archivos temporales.
+
+En ``C:\WINDOWS\system32\spool\PRINTERS`` eliminamos los archivos temporales. 
+
+Con el siguiente reanudamos de nuevo el servicio de impresión.
 ```c
 net start spooler
 ```
-Con el siguiente reanudamos de nuevo el servicio de impresión.
 
 # <a name="12">Herramientas para Mac</a>
 **Links** de interés:
