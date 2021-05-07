@@ -15,7 +15,8 @@ layout: default
 - [Matar un proceso usando ```Taskkill```](#8)
 - [Iniciar/detener servicios en Windows](#9)
 - [Solucionar el error de ```memory management``` Windows 10](#10)
-- [MacOS](#11)
+- [Eliminar cola de impresión](#11)
+- [MacOS](#12)
 
 --- 
 
@@ -218,7 +219,19 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 - Si esto no funciona ejecutamos un ``sfc /scannow``.
 (Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
-# <a name="11">Herramientas para Mac</a>
+### <a name="11">Eliminar cola de impresión</a>
+En ``cmd`` escribimos los siguientes comandos:
+```c
+net stop spooler
+```
+Este comando para los servicios de cola de impresión
+En ``C:\WINDOWS\system32\spool\PRINTERS`` eliminamos los archivos temporales.
+```c
+net start spooler
+```
+Con el siguiente reanudamos de nuevo el servicio de impresión.
+
+# <a name="12">Herramientas para Mac</a>
 **Links** de interés:
 - [Optimizar Mac](https://store.bananacomputer.com/blog/mac/7-formas-de-optimizar-tu-mac/84.html)
 
