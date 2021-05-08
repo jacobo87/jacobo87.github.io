@@ -220,7 +220,7 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 (Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
 
-### <a name="11">Eliminar cola de impresión</a>
+### <a name="11">Eliminar cola de impresión Windows</a>
 En ``cmd`` escribimos los siguientes comandos:
 
 Este comando para los servicios de cola de impresión
