@@ -266,5 +266,5 @@ Instalación y actualización de programas:
 
 [Subir](./)
 
->  &copy;Jacobo IT 
+>  <a href="https://jacoboazmani.org" target="_blank">&copy;Jacobo IT</a> 
 
