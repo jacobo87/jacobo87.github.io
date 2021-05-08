@@ -219,6 +219,7 @@ En ``ejecutar`` escribimos ``MDSCHED``.
 - Si esto no funciona ejecutamos un ``sfc /scannow``.
 (Fuente: [profesionalreview](https://www.profesionalreview.com/2018/11/27/memory-management-windows-10/))
 
+
 ### <a name="11">Eliminar cola de impresión</a>
 En ``cmd`` escribimos los siguientes comandos:
 
@@ -232,7 +233,8 @@ En ``C:\WINDOWS\system32\spool\PRINTERS`` eliminamos los archivos temporales.
 Con el siguiente reanudamos de nuevo el servicio de impresión.
 ```c
 net start spooler
-```
+``` 
+--- 
 
 # <a name="12">Herramientas para Mac</a>
 **Links** de interés:
