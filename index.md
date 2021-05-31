@@ -266,5 +266,9 @@ Instalación y actualización de programas:
 
 [Subir](./)
 
+![hacker](https://user-images.githubusercontent.com/58173221/120210379-000cf500-c230-11eb-9e30-1491f46165e0.gif)
+
+
+
 >  &copy;Jacobo IT 
 
