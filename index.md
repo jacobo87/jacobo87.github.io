@@ -257,6 +257,12 @@ Ejemplo de ``kill``:
 
 ![Kill](./assets/images/kill.png "Kill")
 
+### Reparar permisos MAC
+En la terminal: 
+```bash
+diskutil resetUserPermissions / `id -u`
+```
+
 ### Puesta a punto Windows/MAC
 Instalación y actualización de programas:
 - [Ninite](https://ninite.com/)
